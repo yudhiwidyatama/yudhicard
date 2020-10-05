@@ -1,0 +1,42 @@
+p {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 0 0;
+    div {
+        
+        font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4px;
+    // background-color: #2196F3;
+    padding: 1px;
+}
+.grid-container > div {
+    // background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 0 0;
+    font-size: 12px;
+  }
+@font-face {
+    font-family: 'wf_standard-font';
+    src: url('https://mrra.telkom.co.id/doc/font2.php') format('woff2'),
+         url('https://mrra.telkom.co.id/doc/font1.php') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.measurediv {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.rightdiv {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.leftdiv {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}

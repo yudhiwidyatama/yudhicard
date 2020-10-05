@@ -1,0 +1,133 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Left subtitle",
+            "name": "leftsubtitle",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Right subtitle",
+            "name": "rightsubtitle",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Right color",
+            "name": "rightcolor",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show all",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "subtitleColor": {
+                    "displayName": "Subtitle color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fillRule": {
+                    "displayName": "Color saturation",
+                    "type": {
+                        "fill": {}
+                    }
+                },
+                 "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontFamily" : {
+                    "displayName": "Font family",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "setPrecision": {
+                    "displayName": "Precision",
+                    "type" : {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    
+                    "select": [
+                        {
+                            "for": {
+                                "in": "measure"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "leftsubtitle"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "rightsubtitle"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "rightcolor"
+                            }
+                        }
+                        
+                    ]
+                }
+            }
+            
+        }
+    ]
+}

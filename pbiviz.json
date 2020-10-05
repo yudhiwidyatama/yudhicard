@@ -1,0 +1,3 @@
+{"visual":{"name":"yudhiCard",
+    "displayName":"YudhiCard","guid":"yudhiCard189DA3EF51674306998E00C660E41D32","visualClassName":"Visual",
+    "version":"1.0.0","description":"Custom card with left and right subtitle","supportUrl":"http://inventorsparadox.blogspot.com/","gitHubUrl":""},"apiVersion":"2.6.0","author":{"name":"Yudhi W.","email":"yudhi.widyatama@gmail.com"},"assets":{"icon":"assets/icon.png"},"externalJS":null,"style":"style/visual.less","capabilities":"capabilities.json","dependencies":null,"stringResources":[]}
